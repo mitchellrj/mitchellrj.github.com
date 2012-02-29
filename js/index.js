@@ -20,11 +20,14 @@
               ['isotoma', 'isotoma.recipe.template',
                'Cheetah templating for buildout.'],
               ['isotoma', 'isotoma.recipe.fms',
-               'Buildout recipe for creating instances of Flash Media Server.']
+               'Buildout recipe for creating instances of Flash Media Server.'],
+              ['collective', 'collective.js.jqueryui',
+               'JQueryUI for Plone']
         ];
 	
 	function addRepositories (repos) {
 		var i, list, showWebsite;
+		repos.sort(function (a, b) { return a['pushed_at'] < b['pushed_at'] ? -1 : 1; });
 		for (i = 0; i < repos.length; i+=1) {
 			if (!repos[i].fork && repos[i].owner===username) {
 				list = $myRepos;

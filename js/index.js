@@ -14,7 +14,9 @@
               ['netsight', 'netsight.async',
                'Provides a base view for running asynchronous processes from Zope.'],
               ['netsight', 'netsight.async_examples',
-               'Examples for netsight.async']
+               'Examples for netsight.async'],
+              ['collective', 'collective.tinymceplugins.codemagic',
+               'Integration of the CodeMagic TinyMCE plugin with Plone']
         ],
         fixedContributedRepos = [
               ['isotoma', 'isotoma.recipe.template',

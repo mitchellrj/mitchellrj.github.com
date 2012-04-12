@@ -14,17 +14,22 @@
               ['netsight', 'netsight.async',
                'Provides a base view for running asynchronous processes from Zope.'],
               ['netsight', 'netsight.async_examples',
-               'Examples for netsight.async']
+               'Examples for netsight.async'],
+              ['collective', 'collective.tinymceplugins.codemagic',
+               'Integration of the CodeMagic TinyMCE plugin with Plone']
         ],
         fixedContributedRepos = [
               ['isotoma', 'isotoma.recipe.template',
                'Cheetah templating for buildout.'],
               ['isotoma', 'isotoma.recipe.fms',
-               'Buildout recipe for creating instances of Flash Media Server.']
+               'Buildout recipe for creating instances of Flash Media Server.'],
+              ['collective', 'collective.js.jqueryui',
+               'JQueryUI for Plone']
         ];
 	
 	function addRepositories (repos) {
 		var i, list, showWebsite;
+		repos.sort(function (a, b) { return a['pushed_at'] < b['pushed_at'] ? -1 : 1; });
 		for (i = 0; i < repos.length; i+=1) {
 			if (!repos[i].fork && repos[i].owner===username) {
 				list = $myRepos;

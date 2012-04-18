@@ -16,7 +16,9 @@
               ['netsight', 'netsight.async_examples',
                'Examples for netsight.async'],
               ['collective', 'collective.tinymceplugins.codemagic',
-               'Integration of the CodeMagic TinyMCE plugin with Plone']
+               'Integration of the CodeMagic TinyMCE plugin with Plone'],
+              ['collective', 'collective.tinymceplugins.embedly',
+               'Integration of the Embedly TinyMCE plugin with Plone']
         ],
         fixedContributedRepos = [
               ['isotoma', 'isotoma.recipe.template',
@@ -24,7 +26,17 @@
               ['isotoma', 'isotoma.recipe.fms',
                'Buildout recipe for creating instances of Flash Media Server.'],
               ['collective', 'collective.js.jqueryui',
-               'JQueryUI for Plone']
+               'JQueryUI for Plone'],
+              ['collective', 'tinymce',
+               'TinyMCE plugins for Plone'],
+              ['collective', 'munin.zope',
+               'Munin plugins for Zope/Plone.'],
+              ['collective', 'plone.app.iterate',
+               'Working-copy support for Plone'],
+              ['plone', 'Products.PortalTransforms',
+               'Various transformations between MIME-types.'],
+              ['plone', 'collective.monkeypatcher',
+               'Sometimes, a monkey patch is a necessary evil.']
         ];
 	
 	function addRepositories (repos) {
